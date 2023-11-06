@@ -1,0 +1,34 @@
+{
+  "travel": [
+    {
+      "id": 1,
+      "name": "korea",
+      "imglink": "https://cdn.pixabay.com/photo/2020/08/09/11/31/business-5475283_1280.jpg"
+    },
+    {
+      "id": 2,
+      "name": "america",
+      "imglink": "https://cdn.pixabay.com/photo/2014/02/17/10/20/statue-of-liberty-267948_1280.jpg"
+    },
+    {
+      "id": 3,
+      "name": "japan",
+      "imglink": "https://cdn.pixabay.com/photo/2014/10/07/13/48/mountain-477832_1280.jpg"
+    },
+    {
+      "id": 4,
+      "name": "israel",
+      "imglink": "https://cdn.pixabay.com/photo/2017/08/25/20/47/international-2681369_1280.jpg"
+    },
+    {
+      "id": 5,
+      "name": "canada",
+      "imglink": "https://cdn.pixabay.com/photo/2016/02/29/23/17/canadian-flag-1229484_1280.jpg"
+    },
+    {
+      "id": 6,
+      "name": "china",
+      "imglink": "https://cdn.pixabay.com/photo/2016/03/04/22/54/animal-1236875_1280.jpg"
+    }
+  ]
+}
