@@ -101,6 +101,23 @@ export default function TravelForm() {
       .then((jsonData) => setTravels([...jsonData]));
   }, [modifyMode]);
 
+  const onDelete = (ev, data) => {
+    console.log("Delete");
+    console.log("삭제ID", data);
+
+    fetch(`http://localhost:3100/travel/${data}`, {
+      method: "DELETE",
+      headers: { "Content-type": "application/json" },
+    }).then((response) => {
+      console.log(response);
+    });
+
+    // 삭제처리
+    // 1. fetch로 삭제처리
+    // 2. travels에 filter함수 할당
+    setTravels(travels.filter((t) => t.id !== data));
+  };
+
   const clickHandlerModify = (data, event) => {
     // 수정화면의 input 태그 값 세팅
     event.preventDefault();
@@ -232,6 +249,9 @@ export default function TravelForm() {
                       top: "50px",
                       right: "24px",
                       zIndex: "1",
+                    }}
+                    onClick={(ev) => {
+                      onDelete(ev, t);
                     }}
                   >
                     삭제
